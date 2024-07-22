@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body> 
-    <nav id="dekstop-nav">
+    <nav id="desktop-nav">
         <div class="logo">Syed Hadi</div>
         <div>
             <ul class="nav-links">
@@ -20,5 +20,21 @@
         </div>
     </nav>
     <script src="script.js"></script>
+    <nav id="stack-nav">
+        <div class="logo">Syed Hadi</div>
+        <div class="stack-menu">
+           <div class="stack-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div> 
+           <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+           </div>
+        </div>
+    </nav>
 </body>
 </html>
