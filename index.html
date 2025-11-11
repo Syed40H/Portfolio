@@ -27,6 +27,8 @@
             <span></span>
             <span></span>
            </div> 
+           <!-- 🌙 Dark Mode Button -->
+     <button class="btn btn-color-2 theme-toggle" aria-label="Toggle dark mode">🌙</button>
            <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
@@ -60,15 +62,16 @@
             onclick="location.href='./#contact'"
             />
         </div>
-        <div class="btn-container">
-            <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/syedresume.pdf')"
-            >
-                
-            </button>
-        </div>
-       </div> 
+<div class="btn-container">
+  <button 
+    class="btn btn-color-2 theme-toggle"
+    aria-label="Toggle dark mode"
+  >
+    Dark Mode
+  </button>
+</div>
+
+ 
     </section>
     <section id="about">
         <p class="section__text__p3 ">Get To Know More...</p>
@@ -219,19 +222,6 @@
         </div>
       </div>
     </section>
-    <section id="experience">
-  <p class="section__text__p3">Where I've Worked</p>
-  <h1 class="title2">Experience</h1>
-  <div class="experience-container">
-    <div class="experience-bubble">
-      <img src="./assets/company-logo.png" alt="Company Logo" class="company-icon">
-      <div class="experience-text">
-        <h3 class="job-title">Software Developer Intern</h3>
-        <p class="company-name">Awesome Tech Inc.</p>
-        <p class="job-description">Worked on developing full-stack web applications using React and Node.js, collaborating with cross-functional teams to deliver high-quality software.</p>
-      </div>
-    </div>
-  </div>
 </section>
 
     <script src="script.js"></script>
