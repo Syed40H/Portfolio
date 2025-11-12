@@ -188,6 +188,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 0.75rem; 
 }
 
 .btn {
@@ -284,7 +285,7 @@ section {
   justify-content: center;
   flex-direction: column;
   height: 0vh;
-  margin-top: -12rem;
+  margin-top: -7rem;
 }
 
 .color-container {
@@ -337,15 +338,58 @@ section {
 }
 
 .codeline {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  flex-direction: row;
+  .codeuse {
+  display: inline-block;
+  white-space: nowrap;
   vertical-align: middle;
-  padding-inline-start: 0.25rem;
-  padding-inline-end: 0.25rem;
-  flex-direction: row;
+  margin: 0 2px;              
+  padding: 0.2rem 0.4rem;     
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  border-radius: 0.3rem; 
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
+
+}
+
+/* Language label colors */
+.codeuse.html {
+  background: #dcdcdc;  
+  color: #2a0845;
+}
+
+.codeuse.css {
+  background: #d8b8ff;   
+  color: #2a0845;       
+}
+
+.codeuse.js {
+  background: #fff9b0;   
+  color: #6b5500;        
+}
+
+.codeuse.react {
+  background: #bdf0eb;  
+  color: #004d4d;        
+}
+.codeuse.mongodb {
+  background: #116149;    
+  color: #fff;
+}
+
+.codeuse.express {
+  background: #e6b89c;    
+  color: #3b2f2f;
+}
+
+.codeuse.node {
+  background: #a8e6a3;    
+  color: #234d20;
+}
+
+
 
 .project-btn {
   color: black;
@@ -360,6 +404,8 @@ section {
   max-width: 325px;
   border-radius: 1.5rem;
   padding: 1.5rem;
+  min-height: 430px;
+  justify-content: space-between;
 }
 
 /* Box position */
@@ -368,6 +414,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  align-items: flex-start;
 }
 
 /* picture */
@@ -485,7 +532,7 @@ section {
   line-height: 1.4;
 }
 
-/* ===== Small tweak for the theme toggle button ===== */
+/* ===== toggle button ===== */
 .theme-toggle {
   width: 3rem;
   padding: 0.4rem 0;
@@ -536,6 +583,16 @@ body.dark .contact-info-upper-container {
   background: rgba(255,255,255,0.03);
 }
 
+.project-subtitle {
+  color: white;           
+  font-weight: 600;       
+  font-size: 0.9rem;      
+  margin-top: 0.2rem;    
+  margin-bottom: 0.4rem;  
+  text-align: center;  
+}
+
+
 body.dark .project-btn { color: #e6edf3; border-color: #3b434b; }
 
 body.dark .experience-bubble {
@@ -573,3 +630,19 @@ body.dark .section__text__p1 { border-right-color: #e6edf3; }
   color: white;
   border-color: rgb(53, 53, 53);
 }
+
+/* Hide the Live Demo button but keep layout spacing */
+.hide-demo {
+  visibility: hidden;       
+  background: transparent;  
+  border: none;             
+  cursor: default;         
+}
+
+.hide-demo:hover {
+  background: transparent;
+  color: transparent;
+  border: none;
+}
+
+
